@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Store | EMPEROR CALEB ACCESSORIES</title>
+    <meta
+      name="description"
+      content="Customer shopping page for EMPEROR CALEB ACCESSORIES. Browse accessories and place orders securely."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">ECA</span>
+          <span>EMPEROR CALEB ACCESSORIES</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#shop">Shop</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="#shop">Shop Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Premium accessories</p>
+            <h1>Shop accessories made to stand out.</h1>
+            <p class="lead">
+              Browse the latest accessories added by the admin and place your order in minutes.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#shop">Browse Products</a>
+            </div>
+            <ul class="stats">
+              <li><strong>500+</strong><span>Happy buyers</span></li>
+              <li><strong>48h</strong><span>Fast delivery</span></li>
+              <li><strong>4.9/5</strong><span>Customer rating</span></li>
+            </ul>
+          </div>
+
+          <div id="featuredProduct" class="hero-card" aria-label="Trending accessory" hidden>
+            <div class="card-top">
+              <span class="pill">Trending now</span>
+              <span id="featuredStock" class="status"></span>
+            </div>
+            <div class="metric-box">
+              <span id="featuredCategory"></span>
+              <h2 id="featuredName"></h2>
+              <strong id="featuredPrice"></strong>
+            </div>
+            <p id="featuredDescription"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Shop</p>
+            <h2>Fresh accessories for modern lifestyles.</h2>
+          </div>
+
+          <div class="shop-layout">
+            <label class="product-search-label" for="productSearch">Search products by name</label>
+            <input
+              id="productSearch"
+              class="product-search"
+              type="search"
+              placeholder="Search accessories..."
+              autocomplete="off"
+            />
+            <div id="productGrid" class="product-grid" aria-live="polite"></div>
+            <button type="button" id="showOrderBtn" class="button button-primary order-start-button" hidden>
+              Order
+            </button>
+
+            <aside id="orderPanel" class="order-panel" hidden>
+              <h3>My order</h3>
+              <div id="orderSummary" class="order-summary">
+                <p>No items selected yet.</p>
+              </div>
+
+              <form id="checkoutForm" class="checkout-form">
+                <label>
+                  Full name
+                  <input type="text" name="customerName" required />
+                </label>
+                <label>
+                  Phone
+                  <input type="tel" name="phone" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" />
+                </label>
+                <label>
+                  Delivery address
+                  <textarea name="address" rows="3" required></textarea>
+                </label>
+                <button type="submit" class="button button-primary full-width">Place Order</button>
+                <button type="button" id="whatsappOrderBtn" class="button button-whatsapp full-width">Order via WhatsApp</button>
+              </form>
+              <p id="checkoutMessage" class="form-message" aria-live="polite"></p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Let’s make shopping easy</p>
+          <h2>Order stylish accessories with confidence.</h2>
+        </div>
+        <div class="contact-box">
+          <p>Email: sundaycaleb027@gmail.com</p>
+          <p>Phone: 0544096402</p>
+          <p>Location: Dansoman</p>
+          <a class="button button-primary" href="mailto:sundaycaleb027@gmail.com">Contact Sales</a>
+        </div>
+      </div>
+      <div class="container bottom-bar">
+        <p>© <span id="year"></span> EMPEROR CALEB ACCESSORIES. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

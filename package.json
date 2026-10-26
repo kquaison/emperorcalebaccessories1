@@ -1,0 +1,24 @@
+{
+  "name": "emperor-caleb-enterprise",
+  "version": "1.0.0",
+  "description": "Business website for Emperor Caleb Enterprise",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "website",
+    "express",
+    "business"
+  ],
+  "author": "Emperor Caleb Enterprise",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^4.21.2",
+    "express-session": "^1.19.0",
+    "multer": "^2.5.0",
+    "session-file-store": "^1.5.0"
+  }
+}
